@@ -7,4 +7,5 @@ export interface Movies {
   duration: number;
   director: string;
   trailer: string;
+  background: string;
 }

@@ -4,22 +4,22 @@ import { CiCalendar } from "react-icons/ci";
 interface FeaturedMovieProps {
   title: string;
   year: number;
-  image: string;
   duration: number;
   description: string;
+  background: string;
 }
 
 export default function FeaturedMovie({
   title,
   year,
-  image,
   duration,
   description,
+  background
 }: FeaturedMovieProps) {
   return (
     <div
       className="relative w-full h-96 bg-cover bg-center rounded-3xl"
-      style={{ backgroundImage: `url(${image})` }}
+      style={{ backgroundImage: `url(${background})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50 rounded-3xl flex flex-col justify-center p-8 text-white">
         <h2 className="text-4xl font-bold mb-2">{title}</h2>

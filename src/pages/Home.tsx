@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import SerieCard from "../components/SerieCard";
 import FeaturedMovie from "../components/FeaturedMovie";
-import background from "../assets/oppenheimerBG.jpg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const settings = {
@@ -16,32 +16,39 @@ export default function Home() {
     slidesToScroll: 1, // Rola 1 filme por vez
   };
 
-  const featuredMovie = data.movies[0];
+  function getRandomNumber(min: number, max: number): number {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 
+  const featuredMovie = data.movies[getRandomNumber(0, data.movies.length - 1)];
+  const movieIndex = data.movies.findIndex((movie) => movie.id === featuredMovie.id);
   return (
     <div>
-      <section className="flex flex-col gap-2 mb-8">
-        <h2 className="text-4xl font-bold mb-4">Filme em Destaque</h2>
-        <FeaturedMovie
-          title={featuredMovie.title}
-          year={featuredMovie.year}
-          image={background}
-          duration={featuredMovie.duration}
-          description={featuredMovie.description}
-        />
-      </section>
+      <Link to={`/movies/${movieIndex+1}`}>
+        <section className="flex flex-col gap-2 mb-8">
+          <h2 className="text-4xl font-bold mb-4">Filme em Destaque</h2>
+          <FeaturedMovie
+            title={featuredMovie.title}
+            year={featuredMovie.year}
+            background={featuredMovie.background}
+            duration={featuredMovie.duration}
+            description={featuredMovie.description}
+          />
+        </section>
+      </Link>
 
       <section className="flex flex-col gap-2 mb-8">
         <h2 className="text-4xl font-bold mb-4">Filmes Recentes</h2>
         <Slider {...settings}>
-          {data.movies.slice(0,7).map((movie) => (
+          {data.movies.slice(0, 7).map((movie) => (
             <MovieCard
               key={movie.id}
               title={movie.title}
               year={movie.year}
               image={movie.image}
               duration={movie.duration}
-              id={movie.id}            />
+              id={movie.id}
+            />
           ))}
         </Slider>
       </section>
@@ -49,7 +56,7 @@ export default function Home() {
       <section className="flex flex-col gap-2 mb-8">
         <h2 className="text-4xl font-bold mb-4">Séries Recentes</h2>
         <Slider {...settings}>
-          {data.series.slice(0,7).map((serie) => (
+          {data.series.slice(0, 7).map((serie) => (
             <SerieCard
               key={serie.id}
               title={serie.title}

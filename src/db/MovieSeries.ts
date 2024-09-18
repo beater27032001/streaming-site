@@ -23,6 +23,18 @@ import foundation from "../assets/foundation.jpg";
 import the_boys from "../assets/the_boys.jpg";
 import squid_game from "../assets/squid_game.jpg";
 import peacemaker from "../assets/peacemaker.jpg";
+import oppenheimerBG from "../assets/oppenheimerBG.jpg";
+import barbieBG from "../assets/barbieBG.jpeg";
+import spidermanBG from "../assets/spiderman_across_spiderverseBG.jpeg"
+import missionBg from "../assets/mission_impossible_dead_reckoningBG.jpg"
+import guardiansBG from "../assets/guardians_of_the_galaxy_vol3BG.jpg"
+import flashBG from "../assets/the_flashBG.png"
+import indianaBG from "../assets/indiana_jones_dial_of_destinyBG.jpeg"
+import wickBG from "../assets/john_wickBG.jpg"
+import marvelsBG from "../assets/the_marvelsBG.jpg"
+import duneBG from "../assets/dune_part_twoBG.jpeg"
+import wonkaBG from "../assets/wonkaBG.jpeg"
+import hungerBG from "../assets/hunger_games_balladBG.jpeg"
 
 const data: MoviesSeriesData = {
   movies: [
@@ -36,6 +48,7 @@ const data: MoviesSeriesData = {
       duration: 180,
       director: "Christopher Nolan",
       trailer: "https://www.youtube.com/watch?v=bK6ldnjE3Y0",
+      background: oppenheimerBG
     },
     {
       id: 2,
@@ -46,6 +59,7 @@ const data: MoviesSeriesData = {
       duration: 114,
       director: "Greta Gerwig",
       trailer: "https://www.youtube.com/watch?v=8zIf0XvoL9Y",
+      background: barbieBG
     },
     {
       id: 3,
@@ -57,6 +71,7 @@ const data: MoviesSeriesData = {
       duration: 140,
       director: "Joaquim Dos Santos, Kemp Powers, Justin K. Thompson",
       trailer: "https://www.youtube.com/watch?v=shW9i6k8cB0",
+      background: spidermanBG
     },
     {
       id: 4,
@@ -68,6 +83,7 @@ const data: MoviesSeriesData = {
       duration: 163,
       director: "Christopher McQuarrie",
       trailer: "https://www.youtube.com/watch?v=wiXwi-3eo5g",
+      background: missionBg
     },
     {
       id: 5,
@@ -79,6 +95,7 @@ const data: MoviesSeriesData = {
       duration: 150,
       director: "James Gunn",
       trailer: "https://www.youtube.com/watch?v=u3V5KDHRQvk",
+      background: guardiansBG
     },
     {
       id: 6,
@@ -90,6 +107,7 @@ const data: MoviesSeriesData = {
       duration: 169,
       director: "Chad Stahelski",
       trailer: "https://www.youtube.com/watch?v=qEVUtrk8_B4",
+      background: wickBG
     },
     {
       id: 7,
@@ -101,6 +119,7 @@ const data: MoviesSeriesData = {
       duration: 144,
       director: "Andy Muschietti",
       trailer: "https://www.youtube.com/watch?v=hebWYacbdvc",
+      background: flashBG
     },
     {
       id: 8,
@@ -112,6 +131,7 @@ const data: MoviesSeriesData = {
       duration: 154,
       director: "James Mangold",
       trailer: "https://www.youtube.com/watch?v=eQfMbSe7F2g",
+      background: indianaBG
     },
     {
       id: 9,
@@ -123,6 +143,7 @@ const data: MoviesSeriesData = {
       duration: 105,
       director: "Nia DaCosta",
       trailer: "https://www.youtube.com/watch?v=iuk77TjvfmE",
+      background: marvelsBG
     },
     {
       id: 10,
@@ -134,6 +155,7 @@ const data: MoviesSeriesData = {
       duration: 155,
       director: "Denis Villeneuve",
       trailer: "https://www.youtube.com/watch?v=way9YKdZwlE",
+      background: duneBG
     },
     {
       id: 11,
@@ -145,6 +167,7 @@ const data: MoviesSeriesData = {
       duration: 130,
       director: "Paul King",
       trailer: "https://www.youtube.com/watch?v=QJMqgUCjifY",
+      background:wonkaBG
     },
     {
       id: 12,
@@ -156,6 +179,7 @@ const data: MoviesSeriesData = {
       duration: 157,
       director: "Francis Lawrence",
       trailer: "https://www.youtube.com/watch?v=RDEeDeRYisM",
+      background: hungerBG
     },
   ],
   series: [
