@@ -3,6 +3,9 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Movies from "./pages/Movies";
 import Series from "./pages/Series";
+import Details from "./pages/MovieDetails";
+import MovieDetails from "./pages/MovieDetails";
+import SerieDetails from "./pages/SerieDetails";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +32,23 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
+  {
+    path: "/movies/:id",
+    element: (
+      <Layout>
+        <MovieDetails />
+      </Layout>
+    ),
+  },
+  {
+    path: "/series/:id",
+    element: (
+      <Layout>
+        <SerieDetails />
+      </Layout>
+    ),
+  },
+  
 ]);
 
 function App() {

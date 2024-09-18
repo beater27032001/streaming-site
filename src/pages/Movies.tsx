@@ -13,6 +13,7 @@ export default function Movies() {
             year={movie.year}
             image={movie.image}
             duration={movie.duration}
+            id={movie.id}
           />
         ))}
       </div>

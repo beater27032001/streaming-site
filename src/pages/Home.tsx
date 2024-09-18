@@ -41,7 +41,7 @@ export default function Home() {
               year={movie.year}
               image={movie.image}
               duration={movie.duration}
-            />
+              id={movie.id}            />
           ))}
         </Slider>
       </section>
@@ -56,6 +56,7 @@ export default function Home() {
               year={serie.year}
               image={serie.image}
               seasons={serie.seasons}
+              id={serie.id}
             />
           ))}
         </Slider>
