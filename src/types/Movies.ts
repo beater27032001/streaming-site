@@ -5,4 +5,6 @@ export interface Movies {
   description: string;
   image: string;
   duration: number;
+  director: string;
+  trailer: string;
 }

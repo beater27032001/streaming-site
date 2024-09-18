@@ -5,4 +5,6 @@ export interface Series {
   description: string;
   image: string;
   seasons: number;
+  director: string;
+  trailer: string;
 }

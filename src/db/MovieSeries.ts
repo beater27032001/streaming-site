@@ -34,6 +34,8 @@ const data: MoviesSeriesData = {
         "A biografia de J. Robert Oppenheimer, físico responsável pelo desenvolvimento da bomba atômica.",
       image: oppenheimer,
       duration: 180,
+      director: "Christopher Nolan",
+      trailer: "https://www.youtube.com/watch?v=bK6ldnjE3Y0",
     },
     {
       id: 2,
@@ -42,6 +44,8 @@ const data: MoviesSeriesData = {
       description: "Uma aventura fantástica na vida da icônica boneca Barbie.",
       image: barbie,
       duration: 114,
+      director: "Greta Gerwig",
+      trailer: "https://www.youtube.com/watch?v=8zIf0XvoL9Y",
     },
     {
       id: 3,
@@ -51,6 +55,8 @@ const data: MoviesSeriesData = {
         "Miles Morales volta para o multiverso enfrentando novos desafios como Homem-Aranha.",
       image: spiderman_across_spiderverse,
       duration: 140,
+      director: "Joaquim Dos Santos, Kemp Powers, Justin K. Thompson",
+      trailer: "https://www.youtube.com/watch?v=shW9i6k8cB0",
     },
     {
       id: 4,
@@ -60,6 +66,8 @@ const data: MoviesSeriesData = {
         "Ethan Hunt e sua equipe enfrentam uma missão cheia de intrigas e ação.",
       image: mission_impossible_dead_reckoning,
       duration: 163,
+      director: "Christopher McQuarrie",
+      trailer: "https://www.youtube.com/watch?v=wiXwi-3eo5g",
     },
     {
       id: 5,
@@ -69,6 +77,8 @@ const data: MoviesSeriesData = {
         "Os Guardiões enfrentam uma nova ameaça enquanto lidam com problemas pessoais.",
       image: guardians_of_the_galaxy_vol3,
       duration: 150,
+      director: "James Gunn",
+      trailer: "https://www.youtube.com/watch?v=u3V5KDHRQvk",
     },
     {
       id: 6,
@@ -78,6 +88,8 @@ const data: MoviesSeriesData = {
         "John Wick retorna para enfrentar os assassinos mais perigosos do mundo.",
       image: john_wick_4,
       duration: 169,
+      director: "Chad Stahelski",
+      trailer: "https://www.youtube.com/watch?v=qEVUtrk8_B4",
     },
     {
       id: 7,
@@ -87,6 +99,8 @@ const data: MoviesSeriesData = {
         "Barry Allen, o Flash, usa seus poderes para viajar no tempo e salvar sua família, mas acaba criando consequências imprevistas.",
       image: the_flash,
       duration: 144,
+      director: "Andy Muschietti",
+      trailer: "https://www.youtube.com/watch?v=hebWYacbdvc",
     },
     {
       id: 8,
@@ -96,6 +110,8 @@ const data: MoviesSeriesData = {
         "Indiana Jones retorna para uma última aventura em busca de um artefato lendário.",
       image: indiana_jones_dial_of_destiny,
       duration: 154,
+      director: "James Mangold",
+      trailer: "https://www.youtube.com/watch?v=eQfMbSe7F2g",
     },
     {
       id: 9,
@@ -105,6 +121,8 @@ const data: MoviesSeriesData = {
         "Capitã Marvel, Ms. Marvel e Monica Rambeau se unem para enfrentar uma nova ameaça cósmica.",
       image: the_marvels,
       duration: 105,
+      director: "Nia DaCosta",
+      trailer: "https://www.youtube.com/watch?v=iuk77TjvfmE",
     },
     {
       id: 10,
@@ -114,6 +132,8 @@ const data: MoviesSeriesData = {
         "Paul Atreides continua sua jornada em Arrakis, buscando vingança e controle sobre o destino do universo.",
       image: dune_part_two,
       duration: 155,
+      director: "Denis Villeneuve",
+      trailer: "https://www.youtube.com/watch?v=way9YKdZwlE",
     },
     {
       id: 11,
@@ -123,6 +143,8 @@ const data: MoviesSeriesData = {
         "A história do jovem Willy Wonka e como ele se tornou o famoso fabricante de chocolates.",
       image: wonka,
       duration: 130,
+      director: "Paul King",
+      trailer: "https://www.youtube.com/watch?v=QJMqgUCjifY",
     },
     {
       id: 12,
@@ -132,6 +154,8 @@ const data: MoviesSeriesData = {
         "Uma prequela que explora os primeiros anos dos Jogos Vorazes e a ascensão de Coriolanus Snow.",
       image: hunger_games_ballad,
       duration: 157,
+      director: "Francis Lawrence",
+      trailer: "https://www.youtube.com/watch?v=RDEeDeRYisM",
     },
   ],
   series: [
@@ -143,6 +167,8 @@ const data: MoviesSeriesData = {
         "Uma adaptação do famoso jogo de videogame que mostra a luta pela sobrevivência em um mundo pós-apocalíptico.",
       image: the_last_of_us,
       seasons: 2,
+      director: "Craig Mazin, Neil Druckmann",
+      trailer: "https://www.youtube.com/watch?v=uLtkt8BonwM",
     },
     {
       id: 2,
@@ -152,6 +178,8 @@ const data: MoviesSeriesData = {
         "A prequela de Game of Thrones, focada na Casa Targaryen e sua luta pelo trono.",
       image: house_of_the_dragon,
       seasons: 2,
+      director: "Miguel Sapochnik, Ryan Condal",
+      trailer: "https://www.youtube.com/watch?v=DotnJ7tTA34",
     },
     {
       id: 3,
@@ -161,6 +189,8 @@ const data: MoviesSeriesData = {
         "O grupo de amigos de Hawkins enfrenta novos perigos do Mundo Invertido.",
       image: stranger_things,
       seasons: 5,
+      director: "The Duffer Brothers",
+      trailer: "https://www.youtube.com/watch?v=yQEondeGvKo",
     },
     {
       id: 4,
@@ -170,6 +200,8 @@ const data: MoviesSeriesData = {
         "O caçador de recompensas Mandaloriano e seu companheiro Grogu continuam suas aventuras na galáxia.",
       image: the_mandalorian,
       seasons: 3,
+      director: "Jon Favreau",
+      trailer: "https://www.youtube.com/watch?v=aOC8E8z_ifw",
     },
     {
       id: 5,
@@ -179,6 +211,8 @@ const data: MoviesSeriesData = {
         "A jornada de Wednesday Addams enquanto enfrenta os mistérios de sua escola peculiar.",
       image: wednesday,
       seasons: 1,
+      director: "Tim Burton",
+      trailer: "https://www.youtube.com/watch?v=Di310WS8zLk",
     },
     {
       id: 6,
@@ -188,6 +222,8 @@ const data: MoviesSeriesData = {
         "A série segue Ted Lasso, um treinador de futebol americano, enquanto ele lidera um time de futebol na Inglaterra.",
       image: ted_lasso,
       seasons: 3,
+      director: "Bill Lawrence, Jason Sudeikis",
+      trailer: "https://www.youtube.com/watch?v=3u7EIiohs6U",
     },
     {
       id: 7,
@@ -197,6 +233,8 @@ const data: MoviesSeriesData = {
         "O deus da trapaça continua sua jornada no multiverso, enfrentando ameaças inesperadas.",
       image: loki,
       seasons: 2,
+      director: "Kate Herron",
+      trailer: "https://www.youtube.com/watch?v=nW948Va-l10",
     },
     {
       id: 8,
@@ -206,6 +244,8 @@ const data: MoviesSeriesData = {
         "Nick Fury enfrenta uma invasão de alienígenas Skrulls que se infiltraram na Terra.",
       image: secret_invasion,
       seasons: 1,
+      director: "Ali Selim",
+      trailer: "https://www.youtube.com/watch?v=qZVTkn2NjS0",
     },
     {
       id: 9,
@@ -215,6 +255,8 @@ const data: MoviesSeriesData = {
         "A luta para salvar a humanidade ao longo de séculos, baseada na obra de Isaac Asimov.",
       image: foundation,
       seasons: 2,
+      director: "David S. Goyer",
+      trailer: "https://www.youtube.com/watch?v=xgbPSA94Rqg",
     },
     {
       id: 10,
@@ -224,6 +266,8 @@ const data: MoviesSeriesData = {
         "Um grupo de vigilantes luta contra super-heróis corruptos que abusam de seus poderes.",
       image: the_boys,
       seasons: 4,
+      director: "Eric Kripke",
+      trailer: "https://www.youtube.com/watch?v=M7urAjFdqi4",
     },
     {
       id: 11,
@@ -233,6 +277,8 @@ const data: MoviesSeriesData = {
         "Concorrentes desesperados participam de jogos mortais por uma chance de ganhar uma grande quantia em dinheiro.",
       image: squid_game,
       seasons: 1,
+      director: "Hwang Dong-hyuk",
+      trailer: "https://www.youtube.com/watch?v=oqxAJKy0ii4",
     },
     {
       id: 12,
@@ -242,6 +288,8 @@ const data: MoviesSeriesData = {
         "A história de Peacemaker, um anti-herói que acredita na paz a qualquer custo, mesmo que precise matar por isso.",
       image: peacemaker,
       seasons: 1,
+      director: "James Gunn",
+      trailer: "https://www.youtube.com/watch?v=OYhFFQl4fLs",
     },
   ],
 };

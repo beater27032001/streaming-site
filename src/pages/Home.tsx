@@ -34,7 +34,7 @@ export default function Home() {
       <section className="flex flex-col gap-2 mb-8">
         <h2 className="text-4xl font-bold mb-4">Filmes Recentes</h2>
         <Slider {...settings}>
-          {data.movies.map((movie) => (
+          {data.movies.slice(0,7).map((movie) => (
             <MovieCard
               key={movie.id}
               title={movie.title}
@@ -49,7 +49,7 @@ export default function Home() {
       <section className="flex flex-col gap-2 mb-8">
         <h2 className="text-4xl font-bold mb-4">Séries Recentes</h2>
         <Slider {...settings}>
-          {data.series.map((serie) => (
+          {data.series.slice(0,7).map((serie) => (
             <SerieCard
               key={serie.id}
               title={serie.title}
