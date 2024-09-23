@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# StreamingApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![StreamingApp](tela.png)
 
-Currently, two official plugins are available:
+## Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este é um projeto desenvolvido para a cadeira de Desenvolvimento FrontEnd
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Acessar a página de filmes e séries.
+- Detalhes sobre um filme ou série do catálogo
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Pré-requisitos
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- [Node.js](https://nodejs.org/)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Instalação e Execução
+
+Siga estas etapas para rodar o projeto na sua máquina local:
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/beater27032001/streaming-site.git
+   cd streaming-site
+
+   ```
+
+2. **Instale as dependências:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Rode o aplicativo:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Abra o navegador:**
+
+   Abra o navegador e acesse `http://localhost:3000`.
+
+## Acesse o Site
+
+Você também pode acessar o aplicativo online através do link abaixo:
+
+[StreamingApp - Versão Online](https://streaming-site-8h0vpsm0a-jos-carlos-paiva-santos-projects.vercel.app)
